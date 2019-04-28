@@ -1,0 +1,6 @@
+header{
+    height: 900px; /* ALTURA DA IMAGEM*/
+    width: auto; /* A LARGURA DA IMAGEM SERÁ DEFINIDA AUTOMATICAMENTE */
+    background-image: url("https://images2.alphacoders.com/589/thumb-1920-589553.png"); /* LINK DA IMAGEM */
+    background-repeat: no repeat; /* A IMAGEM NAO SE REPETE */
+}

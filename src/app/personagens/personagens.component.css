@@ -1,0 +1,44 @@
+.card{
+    margin-top: 10px; /* MARGEM ACIMA DO CARD */
+    box-shadow: 10px 10px 10px #ddd; /* CAIXA DE SOMBRA HORIZONTAL - VERTICAL-DISPERSAO DA SOMBRA*/
+    border:1px solid #ccc !important; /* BORDA SOLIDA DE 1PX DE LARGURA E COR CINZA*/
+    padding: 10px; /* MARGEM INTERNA */
+}
+img{
+    -webkit-filter: sepia(100%); /* FILTRO SEPIA DE 100%*/
+    filter: grayscale(150%); /* COMPLEMENTO DO FILTRO - OS DOIS TRABALHAM JUNTOS */
+}
+img:hover{ /* QUANDO PASSAR O MOUSE SOBRE A IMAGEM */
+    -webkit-filter: sepia(0); /* FILTRO SEPIA ZERO PARA A IMAGEM FICAR NA COR ORIGINAL*/
+    filter: sepia(0);/* COMPLEMENTO DO FILTRO */
+}
+.btn-mais{
+    background-color: #0f3d52; /* MUDANDO A COR DO BOTAO */
+    color: #fff; /* LETRA BRANCA*/ 
+}
+.btn-mais:hover{ /* QUANDO PASSAR O MOUSE SOBRE O BOTAO */ 
+    background-color: #fff;
+    color: #0f3d52;
+    border: 1px solid #0f3d52;
+}
+.btn-curtir{
+    background-color: #3b5998;
+    color: #fff;
+}
+.btn-curtir:hover{
+    background-color: #496ebc;
+    color: #fff;
+}
+.fa-star, .fa-star-half-alt{ /* ALTERANDO A COR DOS ICONES */ 
+    color: yellow;
+    margin-right: 5px;
+}
+.zoom{
+    transition: transform 0.5s; /* TEMPO DE ZOOM 2 SEGUNDOS*/
+    margin: 0 auto; /* MARGEM ZERO E AUTOMATICA*/
+    border-radius: 5px; /* QUANDO ABRIR A IMAGEM COM ZOOM TERA UMA BORDA ARREDONDADA */
+}
+.zoom:hover{ /* ZOOM ACONTECE QUANDO PASSA  MOUSE SOBRE A IMAGEM */
+    transform: scale(1.3); /* A IMAGEM AUMENTARA 20% */
+    z-index: 1; /* PARA A IMAGEM FICAR A FRENTE DOS OUTROS ITENS DE TELA*/
+}

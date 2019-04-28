@@ -1,0 +1,45 @@
+<!-- CONTAINER COM MARGEM TOP -->
+<div class="container-fluid mt-5">
+	<!-- LINHA PARA AGRUPAR OS CARDS -->
+	<div class="row">
+		<!-- DEFINE A LARGURA EM COLUNAS - AGRUPA OS CARDS COLOCANDO DO TAMANHO DO MAIOR - MARGEM INFERIOR - FOR PARA TRAZER A LISTA DE PERSONAGENS -->
+		<div class="col-md-4 card-group mb-3" *ngFor="let item of personagens">
+			<!-- CARD COM BORDA DARK - MAGEM TOP -->
+			<div class="card border-dark mt-5">
+				<!-- IMAGEM DO PERSONAGEM - COM CSS DO BOOTSTRAP PARA IMAGEM NO TOP DO CARD E ZOOM -->
+				<img [src]="item.imagem" class="card-img-top zoom">
+				<!-- CORPO DO CARD COM TEXTO JUSTIFICADO -->
+				<div class="card-body text-justify">
+					<!-- PARAGRAFO COM NEGRITO -->
+					<p>
+						<b>Código: </b>{{item.id}}
+						<br><b>Nome do Personagem: </b> {{item.nome}}
+						<br><b>Descrição: </b> {{item.descricao}}
+					</p>
+				<!-- BOTAO BLOCK PARA OCUPAR A LARGURA TOTAL DA COLUNA - BTN-MAIS RECEBERÁ UM CSS DE COR DIFERENTE - MARGEM TOP - TITLE PARA QUANDO PASSAR O MOUSE MOSTRAR UMA INFORMAÇÃO-->
+					<button class="btn btn-block btn-mais mt-2" title="Para saber mais">
+						CLIQUE PARA SABER MAIS
+						<!-- ICONE DO FONTAWESOME -->
+						<i class="fas fa-plus-circle ml-2"></i>
+					</button>
+				</div> <!-- FECHA CARD BODY -->
+
+				<!-- RODAPE DO CARD -->
+				<div class="card-footer">
+					<!-- ICONES DE ESTRELAS -->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<!-- BOTAO ALINHADO PELA DIREITA -->
+					<button class="btn btn-curtir btn-sm" style="float:right">
+						Curtir
+						<i class="far fa-thumbs-up"></i>
+					</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
