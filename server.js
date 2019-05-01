@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express('path');
 
+var path = require('path');
+
 var app = express();
 
 app.use(express.static(__dirname + '/angularapp'));
