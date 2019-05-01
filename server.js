@@ -1,7 +1,7 @@
-const express = require('express');
-const app = express('path');
+var express = require('express');
+var app = express('path');
 
-const app = express();
+var app = express();
 
 app.use(express.static(__dirname + '/angularapp'));
 
