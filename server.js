@@ -1,14 +1,14 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express('path');
 
-app.use(express.static(__dirname+'/dist'))
+const app = express();
 
-app.get('/*', (req, res)=>{
+app.use(express.static(__dirname + '/angularapp'));
 
-    res.sendFile(__dirname+'dist/index.html')
-})
+app.get('/*', function(req,res){
 
-app.listen(3000, ()=>{
+    res.sendFile(path.join(__dirname + '/angularapp/index.html'));
 
-    console.log("server has started");
-})
+});
+
+app.listen(process.env.PORT || 8080);
